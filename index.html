@@ -1488,7 +1488,7 @@ dialog.photo-viewer::backdrop { background: rgba(0,0,0,.82); }
 
     <div class="whats-new" id="whatsNew" data-new-until="2027-01-31" role="note">
       <span class="new-badge">New</span>
-      <span><b>Senior homeowners:</b> there could be help with payments. <a href="#faq-seniors" class="faq-jump">Read more</a></span>
+      <span><b>Senior, disabled and low-income homeowners:</b> there could be help with payments. <a href="#faq-seniors" class="faq-jump">Read more</a></span>
       <button type="button" class="wn-close" aria-label="Hide this notice">×</button>
     </div>
 
@@ -1964,14 +1964,21 @@ dialog.photo-viewer::backdrop { background: rgba(0,0,0,.82); }
     </div>
     <div class="faq-item" id="faq-seniors">
       <button class="faq-question">
-        <span>Is there help for senior homeowners? <span class="new-badge" data-new-until="2027-01-31">New</span></span>
+        <span>Is there help for senior, disabled and low-income homeowners? <span class="new-badge" data-new-until="2027-01-31">New</span></span>
         <span class="faq-icon">▼</span>
       </button>
       <div class="faq-answer">
-        We want every neighbor to be able to stay in their home and keep up with costs as our streets improve. Here’s what we’re working on:
+        We want every neighbor to be able to keep up with costs as our streets improve. Here’s what we’re working on:
         <ul>
-          <li><b>Delay payments until the home is sold.</b> Ohio law (<a href="https://codes.ohio.gov/ohio-revised-code/section-727.251" target="_blank" rel="noopener">ORC 727.251</a>) lets City Council delay a homeowner’s payments when paying on time would be a hardship. Payments can be delayed until a date Council sets, or until the home is sold or transferred. We plan to ask Council to adopt a standing policy so senior homeowners who live in their homes qualify automatically. The amount stays with the property and is paid when it’s sold, so nothing is due while you live there.</li>
-          <li><b>A senior relief fund.</b> We plan to ask local foundations to fund a program that could pay some or all of the share for low-income seniors. This isn’t in place yet.</li>
+          <li><b>Delay payments until the home is sold.</b> Ohio law (<a href="https://codes.ohio.gov/ohio-revised-code/section-727.251" target="_blank" rel="noopener">ORC 727.251</a>) lets City Council delay a homeowner’s payments when paying on time would be a hardship. Payments can be delayed until a date Council sets, or until the home is sold or transferred. Here’s what we’ll ask City Council to do:
+            <ul>
+              <li>Let senior, disabled and low-income homeowners who live in their homes request a delay with a simple form</li>
+              <li>Keep the amount with the property, not on their yearly bill</li>
+              <li>Collect it only when the home is sold or changes hands</li>
+            </ul>
+            Requests have to be made within 15 days after Council passes the final assessment, so we’ll remind neighbors when that time comes.
+          </li>
+          <li><b>A relief fund.</b> We plan to ask local foundations to fund a program that could pay some or all of the share for low-income seniors, and we’ll look for partners who could help other low-income homeowners too. This isn’t in place yet.</li>
           <li><b>Help with paperwork.</b> Neighbors can help you apply for a delay or for any program that becomes available.</li>
         </ul>
         These are goals, not promises yet. We’ll post updates as the City and our partners respond.
@@ -1983,7 +1990,7 @@ dialog.photo-viewer::backdrop { background: rgba(0,0,0,.82); }
         <span class="faq-icon">▼</span>
       </button>
       <div class="faq-answer">
-        Costs are spread over many years on your tax bill. We’re also looking to work with our city, county, and state representatives to bring in <a href="https://publicworks.ohio.gov/programs/infrastucture/scip-ltip/01-scip-ltip" target="_blank" rel="noopener">OPWC (SCIP/LTIP)</a> grants and any county funds we qualify for that could help offset the cost. Eligible seniors and individuals with disabilities can apply for Ohio’s Homestead Exemption (<a href="https://tax.ohio.gov/static/forms/real_property/dte_105a.pdf" target="_blank" rel="noopener">Form DTE 105A</a>) to lower their regular property taxes. It does not lower special assessments. <a href="#faq-seniors" class="faq-jump">See “Is there help for senior homeowners?”</a> for the options that would. Neighbors may be able to help with the application or connect you with representatives who can.
+        Costs are spread over many years on your tax bill. We’re also looking to work with our city, county, and state representatives to bring in <a href="https://publicworks.ohio.gov/programs/infrastucture/scip-ltip/01-scip-ltip" target="_blank" rel="noopener">OPWC (SCIP/LTIP)</a> grants and any county funds we qualify for that could help offset the cost. Eligible seniors and individuals with disabilities can apply for Ohio’s Homestead Exemption (<a href="https://tax.ohio.gov/static/forms/real_property/dte_105a.pdf" target="_blank" rel="noopener">Form DTE 105A</a>) to lower their regular property taxes. It does not lower special assessments. <a href="#faq-seniors" class="faq-jump">See “Is there help for senior, disabled and low-income homeowners?”</a> for the options that would. Neighbors may be able to help with the application or connect you with representatives who can.
       </div>
     </div>
     <div class="faq-item">
@@ -6595,7 +6602,7 @@ function performLookup() {
         <div class="result-title">${item.address}</div>
         <div class="result-meta">Deeded Owner: <b>${item.owner}</b> · Parcel No: <b>${item.parcelNo}</b> · ${isCorner ? 'Corner / Multi-Frontage Lot' : 'Single Frontage'}</div>
         <div class="quote-note"><b>Estimates only.</b> These numbers are rough examples based on public county records as of November 2026. They are not a bill, a quote or an official assessment, and they may contain errors. If a project moves forward, the City and County will set the actual amounts. Please check anything important with the <a href="https://myplace.cuyahogacounty.gov/" target="_blank" rel="noopener">Cuyahoga County Fiscal Officer</a>. <a href="#disclaimer" class="disc-link">Full disclaimer</a></div>
-        <div class="senior-note"><b>Senior homeowner?</b> There could be help with payments. <a href="#faq-seniors" class="faq-jump">Learn more</a></div>
+        <div class="senior-note"><b>Senior, disabled or low-income homeowner?</b> There could be help with payments. <a href="#faq-seniors" class="faq-jump">Learn more</a></div>
         ${cornerNoticeHtml}
         ${recordsHtml}
       </div>
